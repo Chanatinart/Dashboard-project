@@ -6,8 +6,6 @@
     --green: #10772a;
     --light: #e9f5db;
     font-size: calc(0.625rem + 0.4vw);
-    --shadow: 0 4px 6px -1px rgb(0,0,0,.1), 0 2px 4px -2px rgb(0, 0, 0, .1)
-
 }
 
 body {
@@ -16,6 +14,7 @@ body {
     display: grid;
     grid-template: auto 4fr / 1fr 4fr 1fr;
     height: 100%;
+    background-color: #ffe568;
 }
 
 /* header */
@@ -25,8 +24,9 @@ header {
     grid-template: auto 1fr / 2fr 1fr;
     padding: 0.5rem 2rem;
     border-bottom: 1px solid #ddd;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .5);
     padding: 8px;
+    background-color: white;
 }
 
 .search {
@@ -201,33 +201,62 @@ article h3 {
 }
 
 /* right side */
-.right-side {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+
+.topic {
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .5);
+    padding: 1rem 2rem;
+    border-radius: 13px;
+    min-width: 231px;
+    margin-top: 10px;
+
 }
 
-div.right-side h3 {
-    font-size: 24px;
-    padding-top: 32px;
+.topic a {
+    text-decoration: none;
+    color: black;
 }
 
-h5 {
-    font-size: 20px;
+.topic p {
     margin: 0;
+    font-size: 18px;
     padding-bottom: 10px;
 }
 
+
  h6 {
-    font-size: 1rem;  
+    font-size: 1.2rem;  
+    margin: 0;
+    padding-top: 15px;
 }
 
-li.topic {
+.treading-container {
+    background-color: white;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .5);
+    border-radius: 13px;
+    min-width: 231px;
+    margin-top: 10px;
+}
+
+/* .treading-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/ auto 1fr ;
+
+} */
+
+ .treading-container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+} 
+.person {
+    display: flex;;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10px;
 }
-
-
 
 .person img {
     height: 100px;
@@ -235,6 +264,25 @@ li.topic {
     object-fit: cover;
     border-radius: 50%;
 }
+
+div.person a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.fullname {
+    color: gray;
+
+}
+
 
 
 
