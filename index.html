@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -15,14 +16,14 @@
 
         <div class="profile-container">
             <img src="icon/bell.png" alt="notify">
-            <img src="icon/cat.png" alt="cat">
-            <h3>Gift K</h3>
+            <img class="smallimg" src="icon/cat.png" alt="cat">
+            <p class="name">Gift K</p>
         </div>
 
         <div class="username">
             <img class="bigimg" src="icon/cat.png" alt="cat">
-            <p>Hi there,</p>
-            <p class="name">Gift K (@gift)</p>
+            <p class="hi">Hi there,</p>
+            <h3>Gift K (@gift)</h3>
         </div>
 
         <div class="btn-list">
@@ -31,13 +32,14 @@
             <button class="button" type="button"> Share</button>
         </div>
     </header>
+    
     <nav>
         <div class="dashboard">
         <img src="icon/happy.png" alt="dog">
         <h3>Dashboard</h3>
         </div>
 
-        <ul>
+        <ul class="option-one">
             <li>
             <img src="icon/home.png" alt="home">
             <a href="#">Home</a>
@@ -62,6 +64,9 @@
                 <img src="icon/group.png" alt="community">
                 <a href="#">Communities</a>
             </li>
+        </ul>
+
+        <ul class="option-two">
             <li>
                 <img src="icon/gear.png" alt="setting">
                 <a href="#">Settings</a>
@@ -75,25 +80,129 @@
                 <a href="#">Privacy</a>
             </li>
         </ul>
+        
     </nav>
 
     <main>
-        <div class="project">
-            <h3>My projects</h3>
-            <div class="item-1">
-                <a href="" class="card"></a>
-                <div class="allbg"
-                style="">
-                    
-                </div>
+            <h3 class="project-head">My projects</h3>
+            <div class="project">
+            <div class="item">
+                <a href="https://chanatinart.github.io/Sign-in-page/"><img class="card" src="icon/sign-in.jpg" alt=""></a>
+                <article>
+                    <h3>Sign-Up Form</h3>
+                    <a href="https://github.com/Chanatinart/Sign-in-page">
+                    <span><img src="icon/github.png" alt="github"></a></span>
+                </article>
+            </div>
 
+            <div class="item">
+                <a href="https://chanatinart.github.io/Calculator-project/" class="card"><img class="card" src="icon/cal.jpg" alt=""></a>
+                <article>
+                    <h3>Calculator project</h3>
+                    <a href="https://github.com/Chanatinart/Calculator-project">
+                    <span><img src="icon/github.png" alt="github"></a></span>
+                </article>
+            </div>
+
+            <div class="item">
+                <a href="https://chanatinart.github.io/Etch-A-Sketch-project/" ><img class="card" src="icon/etch.jpg" alt=""></a>
+                <article>
+                    <h3>Etch A Sketch project</h3>
+                    <a href="https://github.com/Chanatinart/Etch-A-Sketch-project">
+                    <span><img src="icon/github.png" alt="github"></a></span>
+                </article>
+            </div>
+
+            <div class="item">
+                <a href="https://chanatinart.github.io/Rock-Paper-Scissors-project/"><img class="card" src="icon/game.jpg" alt=""></a>
+                <article>
+                    <h3>Rock Paper Scissors Project</h3>
+                    <a href="https://github.com/Chanatinart/Rock-Paper-Scissors-project">
+                    <span><img src="icon/github.png" alt="github"></a></span>
+                </article>
+            </div>
+
+            <div class="item">
+                <a href="https://chanatinart.github.io/My-blanket-cat-project/" ><img class="card" src="icon/webpage.jpg" alt=""></a>
+                <article>
+                    <h3>My first home page</h3>
+                    <a href="https://github.com/Chanatinart/My-blanket-cat-project">
+                    <span><img src="icon/github.png" alt="github"></a></span>
+                </article>
+            </div>
+
+            <div class="item">
+                <a href="https://www.youtube.com/watch?v=dYRITmpFbJ4/" ><img class="card" src="icon/girl.jpg" alt=""></a>
+                <article>
+                    <h3>aespa 'Girl'</h3>
+                    <a href="https://www.youtube.com/watch?v=dYRITmpFbJ4">
+                    <span><img src="icon/github.png" alt="github"></a></span>
+                </article>
             </div>
         </div>
-
     </main>
 
+    <div class="right-side">
+    <h3>Announcements</h3>
+        <ul class="card">
+            <li class="topic">
+                <h5>New update</h5>
+                <a href="https://www.billboard.com/music/pop/girls-generation-forever-1-comeback-1235123399/"><h6>Girls’ Generation Remind Us They’re K-Pop Icons With ‘Forever 1’</h6></a>
+                <p>The new full-length is the latest example of K-pop groups defying industry odds by staying together.</p>
+            </li>
 
-    </div>
+                <hr>
+
+            <li class="topic">
+                <a href="https://www.soompi.com/article/1540241wpp/aespas-girls-becomes-best-selling-k-pop-girl-group-album-of-all-time">
+                    <h6>aespa’s “Girls” Becomes Best-Selling K-Pop Girl Group Album Of All Time</h6></a>
+                <p>aespa has made history with their latest mini album!</p>
+            </li>
+        </ul>
     
+
+        <div class="trend-content">
+            <h3>Trending</h3>
+            <ul class="card">
+            <li class="person">
+                <a href="https://www.instagram.com/aespa_official/">
+                <img src="icon/karina.jpg" alt="karina">
+                <p><span>@karina_aespa</span><br>
+                    <span>Karina</span> 
+                </p></a>
+            </li>
+            
+
+            <li class="person">
+                <a href="https://www.instagram.com/aespa_official/">
+                <img src="icon/winter.jpg" alt="winter">
+                <p><span>@winter_aespa</span><br>
+                    <span>Winter</span> 
+                </p></a>
+            </li>  
+            
+
+            <li class="person">
+                <a href="https://www.instagram.com/taeyeon_ss/">
+                <img src="icon/taeyeon.jpg" alt="taeyeon">
+                <p><span>@taeyeon_ss</span><br>
+                    <span>Taeyeon</span> 
+                </p></a>
+            </li>
+
+            <li class="person">
+                <a href="https://www.instagram.com/girlsgeneration/">
+                <img src="icon/snsd.jpg" alt="snsd">
+                <p><span>@girlsgeneration</span><br>
+                    <span>girlsgeneration</span> 
+                </p></a>  
+            </li>
+        </ul>
+    </div>
+    </div> 
+
+    <footer>
+        <div>Created by Chanatinart K for Odin project</div>
+    </footer>
 </body>
 </html>
